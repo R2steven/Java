@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "DoubleLinkedList",
+            "request": "launch",
+            "mainClass": "ccdmy_tech_interview.DoubleLinkedList",
+            "projectName": "Java_fc6a648c"
+        },
+        {
+            "type": "java",
+            "name": "Node",
+            "request": "launch",
+            "mainClass": "ccdmy_tech_interview.Node",
+            "projectName": "Java_fc6a648c"
+        },
+        {
+            "type": "java",
+            "name": "Node",
+            "request": "launch",
+            "mainClass": "Node",
+            "projectName": "Java_fc6a648c"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "BlackJack_game",
+            "request": "launch",
+            "mainClass": "BlackJack_game",
+            "projectName": "Java_fc6a648c"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorldJava",
+            "request": "launch",
+            "mainClass": "HelloWorldJava",
+            "projectName": "Java_fc6a648c"
+        }
+    ]
+}
