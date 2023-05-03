@@ -1,6 +1,6 @@
 package ccdmy_tech_interview;
 
-public class LinkedList {
+public class LinkedList implements LinkedListBase{
     
     //Variables
     public Node head;

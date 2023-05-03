@@ -1,6 +1,6 @@
 package ccdmy_tech_interview;
 
-public class DNode {
+public class DNode implements NodeBaseDouble {
 
     //Variables
     public String data;
@@ -17,12 +17,12 @@ public class DNode {
 
     //Setters
 
-    public void setNextNode(DNode node){
-        this.next = node;
+    public void setNextNode(NodeBase node){
+        this.next = (DNode)node;
     }
 
-    public void setPrevNode(DNode node) {
-        this.prev = node;
+    public void setPrevNode(NodeBaseDouble node) {
+        this.prev = (DNode)node;
     }
 
 
@@ -37,4 +37,8 @@ public class DNode {
     }
 
     //Methods
+
+    public static void main(String []args){
+
+    }
 }

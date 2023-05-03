@@ -1,7 +1,7 @@
 package ccdmy_tech_interview;
 
 
-public class Node {
+public class Node implements NodeBase {
     //Variables
   public String data;
   private Node next;
@@ -21,8 +21,8 @@ public class Node {
 
   //Setters
 
-  public void setNextNode(Node node){
-    this.next = node;
+  public void setNextNode(NodeBase node){
+    this.next = (Node)node;
   }
 
   //Methods

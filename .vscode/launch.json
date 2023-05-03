@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LinkedListHashMap",
+            "request": "launch",
+            "mainClass": "ccdmy_tech_interview.LinkedListHashMap",
+            "projectName": "Java_fc6a648c"
+        },
+        {
+            "type": "java",
+            "name": "DNode",
+            "request": "launch",
+            "mainClass": "ccdmy_tech_interview.DNode",
+            "projectName": "Java_fc6a648c"
+        },
+        {
+            "type": "java",
             "name": "DoubleLinkedList",
             "request": "launch",
             "mainClass": "ccdmy_tech_interview.DoubleLinkedList",

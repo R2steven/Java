@@ -1,6 +1,6 @@
 package ccdmy_tech_interview;
 
-public class DoubleLinkedList {
+public class DoubleLinkedList implements LinkedListBaseDouble {
   //Variables 
   public DNode head;
   public DNode tail;
@@ -15,6 +15,8 @@ public class DoubleLinkedList {
   public DoubleLinkedList(String headData, String tailData)  {
       this.head = new DNode(headData);
       this.tail = new DNode(tailData);
+      this.head.setNextNode(this.tail);
+      this.tail.setPrevNode(this.head);
   }
 
   //Setters
@@ -46,7 +48,7 @@ public class DoubleLinkedList {
   }
 
   //Getters
-  public DNode Ftraverse()   {
+  public DNode traverse()   {
       DNode currentNode = this.head;
       while (currentNode.getNextNode() != null){
           currentNode = currentNode.getNextNode();
@@ -62,6 +64,10 @@ public class DoubleLinkedList {
       return currentNode;
   }
 
+  public DNode findTarget(String target){
+    return this.findTarget(target, 1);
+  }
+  
   public DNode findTarget(String target, int direction){
       if (direction == 1){
           DNode currentNode = this.head;
@@ -88,17 +94,18 @@ public class DoubleLinkedList {
 
   //Methods
 
-  public void remove(DNode node) {
-    if (node!=null){
-        if (node==this.head){
+  public void remove(NodeBaseDouble node) {
+    DNode rnode = (DNode)node;
+    if (rnode!=null){
+        if (rnode==this.head){
             this.removeHead();
         }
-        else if(node==this.tail){
+        else if(rnode==this.tail){
             this.removeTail();
         }
         else{
-            DNode next = node.getNextNode();
-            DNode prev = node.getPrevNode();
+            DNode next = rnode.getNextNode();
+            DNode prev = rnode.getPrevNode();
             next.setPrevNode(prev);
             prev.setNextNode(next);
         }
