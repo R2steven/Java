@@ -2,6 +2,7 @@ package ccdmy_tech_interview;
 
 public class NodeHashMap extends DNode {
 
+    String key = super.data;
     String data;
 
     public NodeHashMap(String key, String data){
