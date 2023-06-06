@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Tree",
+            "request": "launch",
+            "mainClass": "ccdmy_tech_interview.Tree",
+            "projectName": "Java_fc6a648c"
+        },
+        {
+            "type": "java",
+            "name": "TreeNode",
+            "request": "launch",
+            "mainClass": "ccdmy_tech_interview.TreeNode",
+            "projectName": "Java_fc6a648c"
+        },
+        {
+            "type": "java",
             "name": "LinkedListHashMap",
             "request": "launch",
             "mainClass": "ccdmy_tech_interview.LinkedListHashMap",
